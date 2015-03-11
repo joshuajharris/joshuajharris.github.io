@@ -32,6 +32,12 @@ header h1 {
   padding: 5%;
 }
 
+#headshot {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 a {
   color: #BC9415;
   text-decoration: none;
@@ -48,4 +54,10 @@ footer {
 
 .rounded {
   border-radius: 50%;
+}
+
+@media screen and (min-width: 760px) {
+ #headshot {
+  width: 50%;
+ } 
 }
