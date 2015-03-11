@@ -1,0 +1,51 @@
+/*
+ * colors
+ * red: #DB3340
+ * yellow: #BC9415 
+ * white: #F7EAC8
+ * green: #1FDA9A
+ * blue: #FFFFF9
+ *
+ * */
+body {
+  background-color: #1FDA9A;
+  font-family: Verdana, sans-serif;
+  font-weight: Bold;
+  color: #F7EAC8;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+#page-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#desc {
+  margin: 20px 0;
+  width: 100%;
+  background-color: #F7EAC8;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+a {
+  color: #BC9415;
+  text-decoration: none;
+  transition: color 800ms; 
+}
+
+a:hover {
+  color: #DB3340;  
+}
+
+footer {
+  text-align: right;
+}
+
+.rounded {
+  border-radius: 50%;
+}
