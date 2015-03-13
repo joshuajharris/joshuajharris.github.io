@@ -24,6 +24,10 @@ header h1 {
   margin: 0 auto;
 }
 
+#container {
+  margin-top: 20px;
+}
+
 #desc {
   margin: 20px 0;
   width: 100%;
@@ -36,6 +40,15 @@ header h1 {
   width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+#quote {
+  font-weight: Normal;
+  font-size: 1.25em;
+}
+
+#quote b {
+  color: #454545;
 }
 
 a {
