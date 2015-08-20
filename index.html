@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joshua Harris</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Joshua J Harris</title>
+    <!-- Hosted CDN Styles -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    
+    <!-- local styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
-  <body>
+  
+  <body data-spy="scroll" data-target="#page-nav">
 
-    <a href="https://github.com/joshuajharris"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+    <nav id="page-nav">
+      <ul class="nav navbar-default nav-tabs" role="tablist">
+        <li><a href="#home"><i class="fa fa-home"></i></a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contests">Contests</a></li>
+      </ul> <!-- end navigation -->
+    </nav> <!-- end page-nav -->
 
-    <div id="page-container">
-      <header>
-        <h1>Joshua Harris</h1>
-        <span id="quote"><i>"Saying 'I'm sorry' and 'I apologize' mean the same thing... unless you're at a funeral."</i><br/><b> -Demetri Martin, Comedian</b></span>
-      </header>
-      <div id="container">
-        <img id="headshot" class="rounded" src="imgs/headshot.jpg"/>
-        <div id="desc">
-          <a href="https://github.com/joshuajharris"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/profile/view?id=390737312&trk=nav_responsive_tab_profile"><i class="fa fa-linkedin"></i></a>
-          <a href="https://twitter.com/Joshua_J_Harris"><i class="fa fa-twitter"></i></a>
-          <a href="https://docs.google.com/document/d/1SjZNAvl8VR5DwKMwnts27yBqAXM-C80rdaWpONdV3XE/edit?usp=sharing"><i class="fa fa-file-text"></i></a>
-          <div style="clear:both"></div>
-        </div>
-      </div>
-      <footer>
-        Joshua Harris &copy; 2015
-      </footer>
-    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <img src="img/headshot.jpg"/>
+        <div class="page-header">
+          <h1>Joshua J Harris<br/><small>Web Applications Developer</small></h1>
+          <ul id="social-links" class="list-inline">
+            <li><a href="https://github.com/joshuajharris"><i class="fa fa-github"></i> Github Profile</a></li>
+            <li><a href="mailto:joshua.jharris13@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+            <li><a href="https://www.linkedin.com/in/joshuajh"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+          </ul> <!-- end social-links -->
+        </div><!-- end page-header -->
+      </div><!-- end container -->
+    </div><!-- end jumbotron -->
+
+    <div id="content-wrapper" class="container-fluid">
+      
+      <div id="home" class="container">
+        <h1>Home</h1>
+        <p>
+          Currently, this site is a web version of my resume.  It is a work in progress.
+        </p>
+      </div> <!-- end home div -->
+   
+      <div id="experience" class="container">
+        <h1>Experience</h1> 
+        <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur consequat est nec feugiat. Donec ac massa vel arcu pulvinar pellentesque. Nullam facilisis diam id mauris hendrerit egestas. Nulla turpis sapien, iaculis vitae varius nec, mattis at orci. Integer pharetra magna eget velit laoreet, at rutrum lacus facilisis. Aenean neque massa, posuere eu bibendum non, ultricies nec turpis. Donec et tempus erat. Donec eget luctus risus, nec posuere libero. Proin egestas dictum tincidunt. Maecenas ut massa ac ante maximus vestibulum. Nunc aliquet commodo lectus. Mauris interdum blandit volutpat.
+
+       Proin sodales est non leo finibus fermentum. Vivamus sem diam, sagittis quis dignissim vel, condimentum efficitur ex. Nam sed dui scelerisque risus finibus euismod. Pellentesque tristique dolor non porttitor fringilla. Duis convallis mauris eu ex aliquet, vehicula accumsan elit egestas. Proin volutpat molestie dapibus. Vivamus scelerisque est eget consequat dignissim. Ut luctus enim ut hendrerit gravida. Morbi pretium massa turpis.
+        </p>
+      </div><!-- end experience -->
+
+      <div id="volunteer" class="container">
+        <h1>Volunteer Work</h1>
+        <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur consequat est nec feugiat. Donec ac massa vel arcu pulvinar pellentesque. Nullam facilisis diam id mauris hendrerit egestas. Nulla turpis sapien, iaculis vitae varius nec, mattis at orci. Integer pharetra magna eget velit laoreet, at rutrum lacus facilisis. Aenean neque massa, posuere eu bibendum non, ultricies nec turpis. Donec et tempus erat. Donec eget luctus risus, nec posuere libero. Proin egestas dictum tincidunt. Maecenas ut massa ac ante maximus vestibulum. Nunc aliquet commodo lectus. Mauris interdum blandit volutpat.
+
+       Proin sodales est non leo finibus fermentum. Vivamus sem diam, sagittis quis dignissim vel, condimentum efficitur ex. Nam sed dui scelerisque risus finibus euismod. Pellentesque tristique dolor non porttitor fringilla. Duis convallis mauris eu ex aliquet, vehicula accumsan elit egestas. Proin volutpat molestie dapibus. Vivamus scelerisque est eget consequat dignissim. Ut luctus enim ut hendrerit gravida. Morbi pretium massa turpis.
+        </p>
+      </div> <!-- end volunteer -->
+    
+      <div id="skills" class="container">
+        <h1>Skills</h1>
+        <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur consequat est nec feugiat. Donec ac massa vel arcu pulvinar pellentesque. Nullam facilisis diam id mauris hendrerit egestas. Nulla turpis sapien, iaculis vitae varius nec, mattis at orci. Integer pharetra magna eget velit laoreet, at rutrum lacus facilisis. Aenean neque massa, posuere eu bibendum non, ultricies nec turpis. Donec et tempus erat. Donec eget luctus risus, nec posuere libero. Proin egestas dictum tincidunt. Maecenas ut massa ac ante maximus vestibulum. Nunc aliquet commodo lectus. Mauris interdum blandit volutpat.
+
+       Proin sodales est non leo finibus fermentum. Vivamus sem diam, sagittis quis dignissim vel, condimentum efficitur ex. Nam sed dui scelerisque risus finibus euismod. Pellentesque tristique dolor non porttitor fringilla. Duis convallis mauris eu ex aliquet, vehicula accumsan elit egestas. Proin volutpat molestie dapibus. Vivamus scelerisque est eget consequat dignissim. Ut luctus enim ut hendrerit gravida. Morbi pretium massa turpis.
+        </p>
+      </div> <!-- end skills -->
+      
+      <div id="contests" class="container">
+        <h1>Contests</h1>
+        <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur consequat est nec feugiat. Donec ac massa vel arcu pulvinar pellentesque. Nullam facilisis diam id mauris hendrerit egestas. Nulla turpis sapien, iaculis vitae varius nec, mattis at orci. Integer pharetra magna eget velit laoreet, at rutrum lacus facilisis. Aenean neque massa, posuere eu bibendum non, ultricies nec turpis. Donec et tempus erat. Donec eget luctus risus, nec posuere libero. Proin egestas dictum tincidunt. Maecenas ut massa ac ante maximus vestibulum. Nunc aliquet commodo lectus. Mauris interdum blandit volutpat.
+
+       Proin sodales est non leo finibus fermentum. Vivamus sem diam, sagittis quis dignissim vel, condimentum efficitur ex. Nam sed dui scelerisque risus finibus euismod. Pellentesque tristique dolor non porttitor fringilla. Duis convallis mauris eu ex aliquet, vehicula accumsan elit egestas. Proin volutpat molestie dapibus. Vivamus scelerisque est eget consequat dignissim. Ut luctus enim ut hendrerit gravida. Morbi pretium massa turpis.
+        </p>
+      </div> <!-- end contests -->
+
+    </div> <!-- end content-wrapper div -->
+
+    <!-- Hosted CDN Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    
+    <!-- Local js -->
+    <script src="js/main.js"></script>
+  
   </body>
 </html>
