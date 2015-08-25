@@ -1,5 +1,32 @@
-.nav {
+.nav a {
   font-size: 1.5em;
+  color: #17232A;
+}
+
+.nav a:hover {
+  color: #AAA;
+}
+
+.navbar-default, 
+.navbar-default li, 
+.navbar-default li a {
+  border: 0;
+}
+
+.navbar-default li a:hover {
+  background-color: #17232A;
+  color: #FFF;
+}
+
+.jumbotron {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/jet-in-carina.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .jumbotron img {
@@ -14,8 +41,25 @@
   text-align: left;
   padding-left: 20px;
   float: left;
+  color: #FFF;
+  border: 0;
 }
 
-#social-links {
+.page-header small {
+  color: #F2EA95;
+}
+
+#social-links a {
+  color: #EEE;
+  padding: 15px;
+  font-size: 3em;
+}
+
+#social-links a:hover {
+  color: #C39468;
+}
+
+footer {
   font-size: 1.5em;
+  text-align: right;
 }
