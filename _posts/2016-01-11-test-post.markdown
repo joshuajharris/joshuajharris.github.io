@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Test Post 1"
+date:       2016-01-11 9:52:00
+author:     "joshuajharris"
+header-img: "img/post-bg-06.jpg"
+---
+
+<p>Text here</p>
+
+<h2 class="section-heading">Heading</h2>
+
+<blockquote>Quote here</blockquote>
+
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-sample-image.jpg" alt="Post Sample Image">
+</a>
+<span class="caption text-muted">image caption</span>
+
+<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
