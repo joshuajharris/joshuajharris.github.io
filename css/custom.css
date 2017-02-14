@@ -1,0 +1,57 @@
+html {
+    background-color: #00B16A;
+    font-family: 'Merriweather', serif;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+
+    padding: 35px;
+}
+
+.pic {
+    float: left;
+    border-radius: 50%;
+    width: 25%;
+}
+
+.bio {
+    float: right;
+    width: 70%;
+}
+
+.bio p {
+    font-size: 1.5em;
+}
+
+.social-links {
+    list-style: none;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.social-links li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 12px;
+    font-size: 2em;
+    color: #F97E7A;
+}
+
+.social-links li a:hover {
+    color: #00B16A;
+}

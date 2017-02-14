@@ -3,11 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Coffee house hermit and all around hipster: Joshua Harris
+    Github: https://github.com/joshuajharris
+    twitter: @Joshua_J_Harris
+    From: Virginia Beach, VA
 
 # THANKS
 
-    <name>
+    Myself
 
 # TECHNOLOGY COLOPHON
 
