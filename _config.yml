@@ -36,6 +36,11 @@ stackoverflow_username: joshuajharris
 disqus:
   shortname: joshuajharris
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
 # Build settings
 markdown: kramdown
 theme: minima

@@ -2,34 +2,58 @@
 layout: default
 ---
 
-<img class="page-title-image" src="{{ "assets/images/vector-profile.png" | relative_url }}"/>
-<div class="page-subtitle">DEVELOPER // DESIGNER</div>
-
 <div class="home">
-  <h1 class="page-heading page-padded">JOSHUA J. HARRIS</h1>
-
+  <img class="page-title-image" src="{{ "assets/images/vector-profile.png" | relative_url }}"/>
+  <div class="page-subtitle">DEVELOPER // DESIGNER</div>
   <div class="page-padded">
+    <h1 class="page-heading">JOSHUA J. HARRIS</h1>
+
     <p class="page-description">
       I love creating great user experiences. Check out some of my work below.
     </p>
-    
-    <a class="page-button-contrast" href="#">FOLLOW</a>
-    <a class="page-button" href="#">RESUME</a>
-    
-    <hr />
+
+    <a class="page-button-contrast" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+      <i class="fa fa-twitter"></i> FOLLOW
+    </a>
+    <a class="page-button" href="https://resume.joshuajharris.com" target="_blank">
+      <i class="fa fa-file-text-o"></i> RESUME
+    </a>
   </div>
 
-  <h2 class="page-section-heading page-padded">FEATURED POSTS</h2>
+  <hr />
+
+  <h2 class="page-section-heading"><i class="fa fa-pencil"></i> FEATURED POSTS</h2>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-      </li>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        <li>
+          <h2>
+            {{ post.title | escape }}
+          </h2>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+  <br/>
+  <br/>
+
+  <h2 class="page-section-heading"><i class="fa fa-file-code-o"></i> FEATURED PROJECTS</h2>
+
+  <ul class="post-list">
+    {% for project in site.projects %}
+      <a class="post-link" href="{{ project.url | relative_url }}">
+        <li>
+          <h2>
+            {{ project.title | escape }}
+          </h2>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ project.date | date: date_format }}</span>
+        </li>
+      </a>
     {% endfor %}
   </ul>
 

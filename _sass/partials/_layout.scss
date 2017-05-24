@@ -1,26 +1,63 @@
 hr {
-  border: 4px solid $dark-green-color;
+  border: 8px solid $dark-green-color;
   border-radius: 0.25em;
+  
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
 
   @include media-query($on-laptop) {
-    margin-top: $spacing-unit / 2;
-    margin-bottom: $spacing-unit / 2;
+    border: 5px solid $dark-green-color;
+  }
+}
+
+.nav-list {
+  margin-left: 0;
+  list-style: none;
+
+  > .nav-link {
+    padding: 12px 24px 12px 24px;
+
+    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+  }
+}
+
+.nav-link {
+  margin: 0;
+  display: block;
+  text-decoration: none;
+
+  h2 {
+    @include relative-font-size(1.5);
+    margin: 0;
   }
 
+  &,
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    background-color: $white-color;
+    color: $dark-green-color;
+  }
 }
 
 .site-header {
-  padding: 24px;
+  padding: 1.5em;
+  margin: 0;
 }
 
 .site-title {
   @include relative-font-size(1.15);
   font-family: $kaushan-script;
   color: $text-color;
-  
+  margin: 0;
+
   padding: 6px;
   float: left;
   display: block;
@@ -48,21 +85,22 @@ hr {
       display: none;
   }
 
-  .menu-icon {
-    display: none;
-  }
+  //.menu-icon {
+    //display: none;
+  //}
 
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
   }
 
-  @include media-query($on-palm) {
+    //// Gaps between nav items, but not on the last one
+    //&:not(:last-child) {
+      //margin-right: 20px;
+    //}
+  //}
+
+  //@include media-query($on-palm) {
     //position: absolute;
     //top: 9px;
     //right: $spacing-unit / 2;
@@ -113,7 +151,7 @@ hr {
       }
       margin-left: 20px;
     }
-  }
+  //}
 }
 
 /**
@@ -151,15 +189,26 @@ hr {
 }
 
 .page-heading {
+  @include relative-font-size(4);
+  //font-size: 4em;
+  font-weight: 700;
+  
+  @include media-query($on-palm) {
+    @include relative-font-size(2);
+  }
 }
 
 .page-section-heading {
   @include relative-font-size(1.15);
   font-weight: 300;
+
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .page-subtitle {
-  @include relative-font-size(1);
+  @include relative-font-size(1.75);
   padding: 12px;
   color: $white-color;
   text-align: center;
@@ -171,6 +220,7 @@ hr {
   margin-bottom: $spacing-unit;
 
   @include media-query($on-laptop) {
+    @include relative-font-size(1);
     margin-top: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
   }
@@ -178,25 +228,29 @@ hr {
 }
 
 .page-description {
-  @include relative-font-size(1.15);
+  @include relative-font-size(2);
   font-family: $bitter;
+  
+  @include media-query($on-palm) {
+    @include relative-font-size(1.25);
+  }
 }
 
 .page-padded {
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  
-  @include media-query($on-laptop) {
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .page-button {
   display: inline-block;
-  color: $text-color;
   padding: 12px;
 
+  &,
+  &:visited {
+    color: $text-color;
+  }
+  
   &:hover {
     background-color: $white-color;
     color: $dark-green-color;
@@ -205,11 +259,15 @@ hr {
 
 .page-button-contrast {
   display: inline-block;
-  color: $white-color;
   padding: 12px;
   background-color: $text-color;
   border-radius: 0.25em;
-
+ 
+  &,
+  &:visited {
+    color: $white-color;
+  }
+  
   &:hover {
     background-color: $white-color;
     color: $dark-green-color;
@@ -232,8 +290,7 @@ hr {
   margin-left: 0;
   list-style: none;
 
-  > li {
-    margin-bottom: $spacing-unit;
+  > .post-link {
     padding: 12px 24px 12px 24px;
 
     border-top: 1px solid $grey-color-light;
@@ -247,11 +304,54 @@ hr {
 }
 
 .post-link {
+  margin: 0;
   display: block;
-  @include relative-font-size(1.5);
+  text-decoration: none;
+
+  h2 {
+    @include relative-font-size(1.5);
+    margin: 0;
+  }
 
   &,
   &:visited {
-    color: $text-color;
+    color: $grey-color;
+  }
+
+  &:hover {
+    background-color: $white-color;
+    color: $dark-green-color;
+  }
+}
+
+.page-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+
+  a {
+    display: block;
+    margin: 0;
+    @include relative-font-size(2);
+    flex: 1;
+    text-align: center;
+    width: 15%;
+
+    @include media-query($on-palm) {
+      padding: 1em;
+      width: 32%;
+      margin: 1%;
+    }
+
+    &,
+    &:visited {
+      color: $text-color;
+    }
+
+    &:hover {
+      color: $dark-green-color;
+    }
   }
 }

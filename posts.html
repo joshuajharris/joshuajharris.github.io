@@ -1,0 +1,24 @@
+---
+layout: page
+description: >
+  Sometimes I can find the time or
+  energy to push myself to write stuff.
+title: POSTS
+---
+
+<h2 class="page-section-heading page-padded"><i class="fa fa-pencil"></i> {{ site.posts | size}} POSTS</h2>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <a class="post-link" href="{{ post.url | relative_url }}">
+      <li>
+        <h2>
+          {{ post.title | escape }}
+        </h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      </li>
+    </a>
+  {% endfor %}
+</ul>
+

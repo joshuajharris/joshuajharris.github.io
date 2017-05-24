@@ -1,0 +1,25 @@
+---
+layout: page
+description: >
+  This is a page where I will show off some of the
+  cool stuff I do.
+title: PROJECTS
+---
+
+<h2 class="page-section-heading page-padded"><i class="fa fa-file-code-o"></i> {{ site.projects | size}} PROJECTS</h2>
+
+<ul class="post-list">
+  {% for project in site.projects %}
+    <a class="post-link" href="{{ project.url | relative_url }}">
+      <li>
+        <h2>
+          {{ project.title | escape }}
+        </h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ project.date | date: date_format }}</span>
+      </li>
+    </a>
+  {% endfor %}
+</ul>
+
+
