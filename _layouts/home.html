@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<img class="page-title-image" src="{{ "assets/images/vector-profile.png" | relative_url }}"/>
+<div class="page-subtitle">DEVELOPER // DESIGNER</div>
+
+<div class="home">
+  <h1 class="page-heading page-padded">JOSHUA J. HARRIS</h1>
+
+  <div class="page-padded">
+    <p class="page-description">
+      I love creating great user experiences. Check out some of my work below.
+    </p>
+    
+    <a class="page-button-contrast" href="#">FOLLOW</a>
+    <a class="page-button" href="#">RESUME</a>
+    
+    <hr />
+  </div>
+
+  <h2 class="page-section-heading page-padded">FEATURED POSTS</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+// Define defaults for each variable.
+
+$dosis: 'Dosis', sans-serif;
+$bitter: 'Bitter', serif;
+$kaushan-script: 'Kaushan Script', cursive;
+
+$base-font-family: $dosis;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$header-font-weight: 700 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #434343 !default;
+$background-color: #E8FFEF !default;
+$brand-color:      #2a7ae2 !default;
+
+$dark-green-color: #7BB38B !default;
+$white-color: #FFFFFF !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "partials/base",
+  "partials/layout",
+  "partials/syntax-highlighting"
+;
