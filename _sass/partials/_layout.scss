@@ -53,17 +53,23 @@ hr {
 }
 
 .site-title {
-  @include relative-font-size(1.15);
   font-family: $kaushan-script;
   color: $text-color;
   margin: 0;
+  font-size: 2em;
 
-  padding: 6px;
+  padding: 6px 12px 6px 12px;
   float: left;
   display: block;
   
-  border: 6px solid $text-color;
+  border: 12px solid $text-color;
   border-radius: 0.25em;
+
+  @include media-query($on-palm) {
+    font-size: 1.25em;
+    padding: 6px;
+    border: 6px solid $text-color;
+  }
 
   &,
   &:visited {
@@ -72,7 +78,7 @@ hr {
 
   &:hover {
     background-color: $white-color;
-    border: 6px solid $white-color;
+    border-color: $white-color;
     color: $dark-green-color;
   }
 }
@@ -160,6 +166,8 @@ hr {
 .site-footer {
   font-family: $bitter;
   
+  margin-top: $spacing-unit;
+  
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   padding-bottom: $spacing-unit;
@@ -228,7 +236,7 @@ hr {
 }
 
 .page-description {
-  @include relative-font-size(2);
+  @include relative-font-size(1.75);
   font-family: $bitter;
   
   @include media-query($on-palm) {
@@ -354,4 +362,11 @@ hr {
       color: $dark-green-color;
     }
   }
+}
+
+.about-profile-image {
+  width: 85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  border: 12px solid $text-color;
 }
