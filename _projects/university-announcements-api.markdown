@@ -2,6 +2,7 @@
 layout: project
 title:  "University Announcements API"
 date:   2017-05-29
+comments: true
 type: NODEJS API
 categories: nodejs api odu
 ---
