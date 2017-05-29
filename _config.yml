@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal website of Web Developer/Designer Joshua J Harris. Read his
   posts and check out projects he is involved in.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://joshuajharris.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SOCIAL LINKS
 twitter_username: Joshua_J_Harris
