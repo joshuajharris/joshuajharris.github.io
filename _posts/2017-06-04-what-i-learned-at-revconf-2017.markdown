@@ -18,15 +18,15 @@ Here are some quick stats to illustrate.
 
 Last year **([RevConf 2016](http://2016.revolutionconf.com "RevConf 2016 site")):**
 -  📅 **1 day** of talks
-- 📍@ the [Virginia Beach Resort Hotel](https://www.google.com/maps/place/Virginia+Beach+Resort+Hotel+and+Conference+Center/@36.9129525,-76.0681616,15z/data=!4m5!3m4!1s0x0:0x38250104abacbf7a!8m2!3d36.9129525!4d-76.0681616?sa=X&ved=0ahUKEwi0nZHB56TUAhUC4GMKHRCOBckQ_BIIlAEwCg "Virginia Beach Resort Hotel - Google maps")
-- 🎟 250 attendees
+- 📍 @ the [Virginia Beach Resort Hotel](https://www.google.com/maps/place/Virginia+Beach+Resort+Hotel+and+Conference+Center/@36.9129525,-76.0681616,15z/data=!4m5!3m4!1s0x0:0x38250104abacbf7a!8m2!3d36.9129525!4d-76.0681616?sa=X&ved=0ahUKEwi0nZHB56TUAhUC4GMKHRCOBckQ_BIIlAEwCg "Virginia Beach Resort Hotel - Google maps")
+- 🎟  250 attendees
 - 🎤 28 [speakers](http://2016.revolutionconf.com/home#speakers "RevConf 2016 speaker list")
 - 💵 14 [sponsors](http://2016.revolutionconf.com/home#sponsors "RevConf 2016 sponsors") (including IssueTrak, Dominion Enterprises, Twilio, Grow, 80:20)
 
 This year **([RevConf 2017](https://revolutionconf.com "RevConf 2017 site")):**
 -  📅 **2 days** of talks
 - 📍 @ the [Wyndham Virginia beach oceanfront](https://www.google.com/maps/place/Wyndham+Virginia+Beach+Oceanfront/@36.8830809,-75.9849285,15z/data=!4m5!3m4!1s0x0:0x2fb1e5148570f926!8m2!3d36.8830809!4d-75.9849285?sa=X&ved=0ahUKEwiin5nK6aTUAhWIKWMKHS4GBrMQ_BIIhQEwCg "Wyndham Virginia Beach oceanfront - Google maps")
-- 🎟 **350+** attendees
+- 🎟  **350+** attendees
 - 🎤 56 [speakers](https://revolutionconf.com/speakers "RevConf 2017 Speakers")
 - 💵 17 [sponsors](https://revolutionconf.com/sponsors "RevConf 2017 Sponsors") (including IssueTrak, Microsoft, Google, Heroku, Dominion Enterprises)
 
