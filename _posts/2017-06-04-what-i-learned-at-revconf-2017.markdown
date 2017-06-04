@@ -5,8 +5,6 @@ date:   2017-06-04 5:11:00 -0400
 categories: conference virginia beach hampton roads
 ---
 
-# What I learned at Revolution Conference 2017
-
 ![](https://pbs.twimg.com/media/DBRMlqQVYAAMfp7.jpg "Bunch of nerds and a drone at the beach")
 ___[Image](https://twitter.com/ETechAdvisor/status/870404848113651717 "Original Image source") Credits [@ETechAdvisor](https://twitter.com/ETechAdvisor "ETA on Twitter") on twitter___
 
