@@ -37,6 +37,8 @@ stackoverflow_username: joshuajharris
 disqus:
   shortname: joshuajharris
 
+google_analytics: UA-100685685-1
+
 collections:
   projects:
     output: true

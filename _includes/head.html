@@ -10,7 +10,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Joshua_J_Harris">
     <meta name="twitter:title" content="Joshua J Harris's Personal Website">
-    <meta name="twitter:description" content="My personal website silly. Here are links where you can digest my stuff and get in contact with me.">
+    <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="twitter:creator" content="@Joshua_J_Harris">
     <!-- Twitter Summary card images must be at least 120x120px -->
     <meta name="twitter:image" content="https://avatars2.githubusercontent.com/u/10967744?v=3&s=460">
@@ -20,7 +20,7 @@
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="http://www.joshuajharris.com/" />
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/10967744?v=3&s=460" />
-    <meta property="og:description" content="My personal website silly. Here are links where you can digest my stuff and get in contact with me." />
+    <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
     <link rel="icon" type="image/png" href="{{ "/assets/favicon-32x32.png" | relative_url }}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{{ "/assets/favicon-16x16.png" | relative_url }}" sizes="16x16" />
