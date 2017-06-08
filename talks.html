@@ -10,7 +10,7 @@ permalink: /talks/index.html
 
 <ul class="post-list">
   {% for talk in site.talks %}
-    <a class="post-link" href="{{ project.url | relative_url }}">
+    <a class="post-link" href="{{ talk.url | relative_url }}">
       <li>
         <h2>
           {{ talk.title | escape }}
