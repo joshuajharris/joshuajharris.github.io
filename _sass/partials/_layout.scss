@@ -338,6 +338,10 @@ hr {
   }
 }
 
+.talk-slides {
+  @include fluid-aspect(16 9, iframe);
+}
+
 .page-social-links {
   display: flex;
   flex-wrap: wrap;

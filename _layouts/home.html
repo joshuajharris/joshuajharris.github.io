@@ -56,5 +56,27 @@ layout: default
       </a>
     {% endfor %}
   </ul>
+  
+  <br/>
+  <br/>
+  
+  <h2 class="page-section-heading"><i class="fa fa-microphone"></i> FEATURED TALKS</h2>
+
+  <ul class="post-list">
+    {% for talk in site.talks %}
+      <a class="post-link" href="{{ talk.url | relative_url }}">
+        <li>
+          <h2>
+            {{ talk.title | escape }}
+          </h2>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">
+            When: {{ talk.when | date: date_format }}<br/>
+            Where: {{ talk.where | upcase }}
+          </span>
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
 
 </div>

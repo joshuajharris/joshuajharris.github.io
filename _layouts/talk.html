@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header page-padded">
+    <h1 class="page-heading" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.when | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.when | date: date_format }}
+      </time>
+      {% if page.where %}
+        • <span itemprop="name">{{ page.where }}</span>
+      {% endif %}</p>
+  </header>
+
+  <hr/>
+
+  <div class="post-content page-padded" itemprop="articleBody">
+    {{ content }}
+  </div>
+  
+  <hr/>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
