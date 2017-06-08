@@ -1,0 +1,25 @@
+---
+layout: page
+description: >
+  Here are some of the talks I have given.
+title: TALKS
+permalink: /talks/index.html
+---
+
+<h2 class="page-section-heading page-padded"><i class="fa fa-microphone"></i> {{ site.talks | size}} TALKS</h2>
+
+<ul class="post-list">
+  {% for talk in site.talks %}
+    <a class="post-link" href="{{ project.url | relative_url }}">
+      <li>
+        <h2>
+          {{ talk.title | escape }}
+        </h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ talk.when | date: date_format }}</span>
+      </li>
+    </a>
+  {% endfor %}
+</ul>
+
+
