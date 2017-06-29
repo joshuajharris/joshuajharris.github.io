@@ -25,7 +25,7 @@ layout: default
   <h2 class="page-section-heading"><i class="fa fa-pencil"></i> FEATURED POSTS</h2>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
       <a class="post-link" href="{{ post.url | relative_url }}">
         <li>
           <h2>
@@ -44,7 +44,7 @@ layout: default
   <h2 class="page-section-heading"><i class="fa fa-file-code-o"></i> FEATURED PROJECTS</h2>
 
   <ul class="post-list">
-    {% for project in site.projects %}
+    {% for project in site.projects limit:5 %}
       <a class="post-link" href="{{ project.url | relative_url }}">
         <li>
           <h2>
@@ -63,7 +63,7 @@ layout: default
   <h2 class="page-section-heading"><i class="fa fa-microphone"></i> FEATURED TALKS</h2>
 
   <ul class="post-list">
-    {% for talk in site.talks %}
+    {% for talk in site.talks limit:5 %}
       <a class="post-link" href="{{ talk.url | relative_url }}">
         <li>
           <h2>

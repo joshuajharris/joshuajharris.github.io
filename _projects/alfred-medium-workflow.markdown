@@ -11,7 +11,7 @@ Search Medium posts right from [Alfred](https://www.alfredapp.com/)!
 
 [Link to Repo](https://github.com/joshuajharris/alfred-medium-workflow)
 
-![](https://d2ppvlu71ri8gs.cloudfront.net/items/1p1O0b0E3C3U3C323T0F/Screen%20Recording%202017-06-07%20at%2005.02%20PM.gif?v=b5b531e6)
+![](https://cl.ly/0E3a2d1u3o0O/download/Screen%20Recording%202017-06-07%20at%2005.02%20PM.gif)
 
 ## Requirements
 1. Alfred App v3
